@@ -12,4 +12,13 @@ class Patient
   end
 
 
+  def new_appointment(date, doctor)
+    @doctor = doctor
+    Appointment.new(date, self, doctor)
+  end
+
+  
+    
+
+
 end
